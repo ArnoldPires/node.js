@@ -1,0 +1,22 @@
+{
+  "name": "webnotes",
+  "version": "1.0.0",
+  "description": "making notes yo",
+  "main": "index.js",
+  "scripts": {
+    "test": "uh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "node.js"
+  },
+  "keywords": [
+    "idk"
+  ],
+  "author": "me",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.17.0"
+  }
+}

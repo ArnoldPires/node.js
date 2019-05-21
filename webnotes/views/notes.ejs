@@ -9,17 +9,28 @@
   <body>
     <header>
       <h1>Notes app</h1>
-      <p>This is a place where I can store my class notes.</p>
+      <h3>This is a place where I can store my class notes.</h3>
     </header>
+    <h3>Your notes below</h3>
     <% for(let x = 0; x <notes.length; x++) { %>
       <div class="card">
         <div class="card-header">
-          note <%= x + 1 %>
+          Note #<%= x + 1 %>
         </div>
-        <d4iv class="card-body">
-          <%= notes[x] %>
+        <div class="card-body">
+          <%= notes[x]
+          if (notes === 'important' || 'priority') {
+            background-color: red;
+          }
+          %>
         </div>
       </div>
     <% } %>
+    <form action="/notes" method="post">
+      <textarea name="note"></textarea>
+      <input class="btn btn-primary" type="submit" value="save">
+    </form>
   </body>
 </html>
+<!--Make it so, when the user types important into the text field
+it changes the background to red and the text color to white -->

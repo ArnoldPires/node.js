@@ -21,10 +21,11 @@
           <%= notes[x] %>
         </div>
       </div>
+        <input class="btn btn-secondary" type="submit" value="Delete">
     <% } %>
     <form action="/notes" method="post">
       <textarea name="note" placeholder="Enter your notes here, when finished click save"></textarea>
-      <input class="btn btn-primary" type="submit" value="save">
+      <input class="btn btn-primary" type="submit" value="Save">
     </form>
   </body>
 </html>

@@ -1,3 +1,8 @@
+//notes.ejs is able to link to the app.js file, because express is already programmed to find
+//the notes.ejs file. This is because its in the views folder. Express always looks for
+//the views folder. While in the views folder, it will always look for the .ejs file.
+//HTML files can also be stored in there, but thats mainly for static files, where as
+// .ejs is always for dynamic sites
 const myNotes = [
 
 ];
@@ -16,6 +21,11 @@ app.post('/notes', (req, res) => {
   myNotes.push(req.body.note);
   res.redirect('/');
 });
+app.delete('/notes/:id', (req, res) => {
+  console.log('delete route hit');
+});
+myNotes.splice(req.params.id, 1);
+res.send({msg:'deleted something', index: req.params.id});
 app.listen(port, () => {
     console.log(`Do as I say and work! ${port}!`)
 });

@@ -29,10 +29,6 @@ form textarea {
   color: white;
 }
 .btn-secondary {
-  background-color: red;
   display: flex;
   margin-left: auto;
-}
-.btn-secondary:hover {
-  background-color: #7c0001;
 }

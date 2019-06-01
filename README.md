@@ -13,6 +13,8 @@ create a folder called views
 
 In the folder create any file like this: "name.ejs"
 
+Go back to terminal and type " npm install ejs --save"
+
 Get out of that folder and create a file called "app.js" in the root folder
 
 To get things to work, you need to add code into the app.js file.

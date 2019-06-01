@@ -7,13 +7,17 @@ cd into the folder you are working on and type "npm init"
 
 Go through the prompt
 
-Type "npm install express --save
+Install the following by typing them into the terminal:
 
+  "npm install express --save"
+  
+  "npm install ejs --save"
+  
+  "npm install body-parser --save"
+  
 create a folder called views
 
 In the folder create any file like this: "name.ejs"
-
-Go back to terminal and type " npm install ejs --save"
 
 Get out of that folder and create a file called "app.js" in the root folder
 

@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Fair Foods</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Fair Foods</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="container">
     <header class="jumbotron">
-    <h1>Fair Foods at Lena Park</h1>
-    <p>Fair Foods at Lena Park" and "Use this page to reserve one or more bags of fresh produce. Pick up on Tuesday afternoons at Lena Park. Each bag costs $2.</p>
-    <img src="../images/fairFoods.jpg"></>
+      <h1>Fair Foods at Lena Park</h1>
+      <p>Fair Foods at Lena Park" and "Use this page to reserve one or more bags of fresh produce. Pick up on Tuesday afternoons at Lena Park. Each bag costs $2.</p>
+      <img src="../images/fairFoods.jpg"></>
     </header>
-    <div class="container">
-      <p>How many grocery bags you are planning to purchase?</p>
-      <p><strong>Name:</strong></p>
-      <p><strong>Number:</strong></p>
-      <button>Save</button>
-    </div>
-  </body>
+    <p>How many grocery bags you are planning to purchase?</p>
+    <form action="/order" method="post">
+      <strong>Name:</strong>
+      <textarea name="Name:" placeholder="Enter name here"></textarea>
+      <strong>Number:</strong>
+      <select>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+      <input class="btn btn-primary" type="submit" value="Save">
+    </form>
+    <% if (customer) { %>
+
+    }
+  </div>
+</body>
 </html>

@@ -16,12 +16,12 @@
       <div class="card">
         <div class="card-header">
           Note #<%= x + 1 %>
+          <button class="btn btn-danger" data-index="<%= x %>">Delete</button>
         </div>
         <div class="card-body">
           <%= notes[x] %>
         </div>
       </div>
-        <input class="btn btn-secondary" type="submit" value="Delete">
     <% } %>
     <form action="/notes" method="post">
       <textarea name="note" placeholder="Enter your notes here, when finished click save"></textarea>

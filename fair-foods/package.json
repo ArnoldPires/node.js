@@ -1,0 +1,21 @@
+{
+  "name": "fair-foods",
+  "version": "1.0.0",
+  "description": "project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "node.js"
+  },
+  "keywords": [
+    "homework"
+  ],
+  "author": "Arnold",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

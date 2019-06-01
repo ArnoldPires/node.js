@@ -22,10 +22,13 @@ app.post('/notes', (req, res) => {
   res.redirect('/');
 });
 app.delete('/notes/:id', (req, res) => {
+  myNotes.splice(req.params.id, 1);
   console.log('delete route hit');
+  res.send ({
+    message: 'deleted',
+    index: req.params.id
+  });
 });
-myNotes.splice(req.params.id, 1);
-res.send({msg:'deleted something', index: req.params.id});
 app.listen(port, () => {
     console.log(`Do as I say and work! ${port}!`)
 });

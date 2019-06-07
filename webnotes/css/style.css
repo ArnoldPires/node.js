@@ -32,3 +32,6 @@ form textarea {
   display: flex;
   margin-left: auto;
 }
+.btn-danger {
+  float: right;
+}

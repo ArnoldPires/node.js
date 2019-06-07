@@ -12,6 +12,7 @@ const port = 3000
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/css', express.static('css'));
+app.use('/js', express.static('js'));
 //app.get('/webnotes', (req, res) => res.send(''))
 //app.use('/', express.static('views'));
 app.get('/', (req, res) => {
@@ -23,12 +24,10 @@ app.post('/notes', (req, res) => {
 });
 app.delete('/notes/:id', (req, res) => {
   myNotes.splice(req.params.id, 1);
-  console.log('delete route hit');
-  res.send ({
-    message: 'deleted',
+  res.send({
     index: req.params.id
   });
 });
 app.listen(port, () => {
-    console.log(`Do as I say and work! ${port}!`)
+  console.log(`Do as I say and work! ${port}!`)
 });
